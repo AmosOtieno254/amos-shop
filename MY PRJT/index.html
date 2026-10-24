@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Amos Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AMOS SHOP</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="cart.html">🛒 Cart</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to Amos Shop</h2>
+    <p>Quality products at affordable prices</p>
+    <button onclick="window.location.href='product.html'">Shop Now</button>
+</section>
+
+<h2 class="title">Featured Products</h2>
+
+<section class="products">
+
+    <div class="product">
+        <div class="product-image">👕</div>
+        <h3>T-Shirt</h3>
+        <p>KSh 800</p>
+        <button onclick="addToCart('T-Shirt', 800)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <div class="product-image">🧴</div>
+        <h3>Clover Chris Bundles</h3>
+        <p>KSh 3,500</p>
+        <button onclick="addToCart('Clover Chris Bundles', 3500)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <div class="product-image">🎧</div>
+        <h3>Headphones</h3>
+        <p>KSh 1,500</p>
+        <button onclick="addToCart('Headphones', 1500)">Add to Cart</button>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Amos Shop</p>
+    <p>Contact: amosshop@example.com</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

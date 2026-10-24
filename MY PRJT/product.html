@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Amos Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>AMOS SHOP</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+    </header>
+
+    <!-- Products Introduction -->
+    <section class="hero">
+        <h2>Our Products</h2>
+        <p>Discover quality products at affordable prices.</p>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="shop-categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <button onclick="filterProducts('all')">All Products</button>
+            <button onclick="filterProducts('clothing')">Clothing</button>
+            <button onclick="filterProducts('perfume')">Perfumes</button>
+            <button onclick="filterProducts('electronics')">Electronics</button>
+        </div>
+    </section>
+
+    <!-- Product Listing -->
+    <h2 class="title">Available Products</h2>
+
+    <section class="products" id="product-list">
+
+        <div class="product" data-category="clothing">
+            <div class="product-image">👕</div>
+            <h3>T-Shirt</h3>
+            <p>KSh 800</p>
+            <button onclick="addToCart('T-Shirt', 800)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product" data-category="perfume">
+            <div class="product-image">🧴</div>
+            <h3>Clover Chris Bundles</h3>
+            <p>KSh 3,500</p>
+            <button onclick="addToCart('Clover Chris Bundles', 3500)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product" data-category="electronics">
+            <div class="product-image">🎧</div>
+            <h3>Headphones</h3>
+            <p>KSh 1,500</p>
+            <button onclick="addToCart('Headphones', 1500)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product" data-category="clothing">
+            <div class="product-image">👔</div>
+            <h3>Formal Shirt</h3>
+            <p>KSh 1,200</p>
+            <button onclick="addToCart('Formal Shirt', 1200)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="product" data-category="electronics">
+            <div class="product-image">⌚</div>
+            <h3>Smart Watch</h3>
+            <p>KSh 2,500</p>
+            <button onclick="addToCart('Smart Watch', 2500)">
+                Add to Cart
+            </button>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Contact: amosshop@example.com</p>
+        <p>&copy; 2026 Amos Shop. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Amos Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>AMOS SHOP</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="hero">
+        <h2>Your Shopping Cart</h2>
+        <p>Review your items before checkout.</p>
+    </section>
+
+    <!-- Cart Content -->
+    <main class="cart-container">
+
+        <div id="cart-items"></div>
+
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+
+            <p>
+                Subtotal:
+                <strong id="cart-subtotal">KSh 0</strong>
+            </p>
+
+            <p>
+                Delivery:
+                <strong id="delivery-cost">KSh 0</strong>
+            </p>
+
+            <hr>
+
+            <h3>
+                Total:
+                <span id="cart-total">KSh 0</span>
+            </h3>
+
+            <button id="checkout-button" onclick="checkout()">
+                Proceed to Checkout
+            </button>
+
+            <p>
+                <a href="product.html">Continue Shopping</a>
+            </p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: amosshop@example.com</p>
+        <p>&copy; 2026 Amos Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
